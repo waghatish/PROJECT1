@@ -1,0 +1,49 @@
+# SNAKE, WATER, GUN GAME
+import random
+'''
+1 for snake
+-1 for water
+0 for gun
+'''
+computer = random.choice([1,-1,0])
+player_inp = input("enter your choice\n s for snake \n w for water\n g for gun\n : ")
+player_dict ={"s":1,
+              "w":-1,
+              "g":0}
+
+reversdict ={1 :"snake",
+              -1 : "water",
+              0 :"gun"}
+
+player = player_dict[player_inp]
+print(f"you choose: {reversdict[player]}\n computer choose: {reversdict[computer]}")
+
+if computer==player:
+    print("game tie...")
+
+# elif computer==1 and player==-1:
+#     print("you lose😛!")
+# elif computer==0 and player==-1:
+#     print("you win😉!")
+
+# elif computer==-1 and player==1:
+#     print("you win😉!")
+# elif computer==0 and player==1:
+#     print("you lose😛!")
+
+# elif computer==-1 and player==0:
+#     print("you lose😛!")
+# elif computer==1 and player==0:
+#     print("you win😉!")
+# else:
+#     print("something went wrong")
+
+
+
+
+
+elif (computer-player)== 1 or (computer-player)== -2: 
+    print("you win😉!")
+else: print("you lose😛!")
+    
+
