@@ -43,7 +43,7 @@ if computer==player:
 
 
 elif (computer-player)== 1 or (computer-player)== -2: 
-    print("you win😉!")
-else: print("you lose😛!")
+    print("you_win😉!")
+else: print("you_lose😛!")
     
 
